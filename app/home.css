@@ -1,0 +1,168 @@
+:root{
+    --text-color: #fff;
+    --color: #f52cf9;
+    --bg-color: #1c1c1d;
+    --first: #fff;
+    --second: #000;
+    --mob-color: #363636;
+}
+
+
+.purple{
+    color: var(--color);
+}
+
+*{
+    font-family: var(--font-poppins);   
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 4rem);
+    height: auto;
+    width: 100%;
+    color: var(--text-color);
+}
+
+
+.homeText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeText .homeTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.homeText .homeTitle h3{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.homeText .homeTitle h1{
+    font-size: 2rem;
+    width: 100%;
+}
+
+.homeText .homeDesc{
+    height:auto;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.homeText .homeDesc p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.homeText .homeButton{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+
+.homeText .homeButton button{
+    background-color: transparent;
+    border: 1px solid var(--color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 5px var(--color);
+    margin: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--color);
+    font-weight: 500;
+}
+.homeText .homeButton button:hover{
+    background-color: var(--color);
+    color: var(--first);
+}
+
+.homeText .homeButton button:active{
+    background-color: var(--color);
+    color: var(--first);
+    transform: scale(1.1);
+}
+
+
+.homeImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+.homeImage img{
+    width: 40%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--color);
+    box-shadow: 0 0 10px 5px var(--color);
+    margin-block: 2rem;
+}
+/*
+.typing {
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+    margin: 0;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: currentColor }
+  }*/
+
+@media (max-width: 768px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .homeText{
+        width: 100%;
+    }
+
+
+    .homeImage{
+        width: 100%;
+    }
+}

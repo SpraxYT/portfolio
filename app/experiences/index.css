@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    scrollbar-width: none;
+    color: var(--text-color);
+    font-family: var(--font-poppins);
+}
+:root{
+    --text-color: #fff;
+    --color: #f52cf9;
+    --bg-color: #1c1c1d;
+    --first: #fff;
+    --second: #000;
+    --mob-color: #363636;
+}
+
+.purple{
+    color: var(--color);
+}
+
+.experiences{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    padding-block: 2rem;
+}
+
+.experiences>h1{
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-block: 1rem;
+}
+
+.languages>h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-left: 2.5rem;
+    height: 100%;
+}
+
+.languages-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;    
+    margin-block: 2rem;
+
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color);
+    box-shadow: 0 0 10px var(--color);
+}
+
+.language>img{
+    height: 5rem;
+}
+
+.environments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-block: 1rem;
+}
+
+.environments-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-block: 2rem;
+}
+
+.environments>h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-left: 2.5rem;
+    height: 100%;
+}
+
+.environment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    border: 1px solid var(--color);
+    box-shadow: 0 0 10px var(--color);
+    width: 10rem;
+    height: 10rem;
+}
+
+.environment>h1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.environment>img{
+    height: 5rem;
+}
+
+@media (max-width: 768px) {
+    .languages>h1{
+        margin-left: 0;
+    }
+    .environments>h1{
+        margin-left: 0;
+    }
+}
